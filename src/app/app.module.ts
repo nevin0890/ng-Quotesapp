@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
-const routes: Routes = []
+const routes: Routes = [
+  { path: '', component: QuotesComponent },
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

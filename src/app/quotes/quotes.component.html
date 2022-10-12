@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">id</th>
+                                <th scope="col">quote </th>
+                                <th scope="col">author</th>
+                                
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of getQuotes.quotes">
+                                <td>{{i.id}}</td>
+                                <td>{{i.quote}}</td>
+                                <td>{{i.author}}</td>
+                               
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
