@@ -8,7 +8,9 @@ import { ApiService } from '../api.service';
 })
 export class QuotesComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService) {
+    this.fetchQuotes()
+   }
   
   fetchQuotes = () => {
     this.api.getAllQuotes().subscribe((data) => { this.getQuotes = data })
